@@ -38,7 +38,7 @@ body {
 #greeting {
     font-size: 40px;
     font-weight: bold;
-    margin-top: 45px;
+    margin: 45px 0px 60px 0px;
     font-family: 'Varela Round', sans-serif !important;
     color: white;
 }
