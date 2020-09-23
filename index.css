@@ -1,114 +1,114 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Varela+Round:300,400,700");
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round:300,400,700');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  height: 100%;
-  user-select: none;
+    height: 100%;
+    user-select: none;
 }
 
 body {
-  font: 300 70px/1 "Lato", sans-serif;
-  color: #d9d9d9;
-  background: #2a2b2e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    font: 300 70px/1 'Lato', sans-serif;
+    color: #d9d9d9;
+    background: #2a2b2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #date {
-  font-size: 30px;
-  margin-bottom: 20px;
-  display: flex;
-  font-family: monospace !important;
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    font-family: monospace !important;
 }
 
 #greeting {
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 45px;
-  font-family: "Varela Round", sans-serif !important;
-  color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 45px;
+    font-family: 'Varela Round', sans-serif !important;
+    color: white;
 }
 
 #comma {
-  color: #ffe084;
-  margin-right: 5px;
+    color: #ffe084;
+    margin-right: 5px;
 }
 
 #slash {
-  color: #ffb6b9;
+    color: #ffb6b9;
 }
 
 #chrome {
-  position: absolute;
-  left: 10px;
-  top: 10px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
 .clock {
-  width: 350px;
-  text-align: center;
-  overflow: hidden;
+    width: 350px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .clock span {
-  position: relative;
-  display: inline-block;
-  width: 50px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
 }
 
 .clock span:nth-child(2) {
-  border-right: 1px solid#ff7c7c;
+    border-right: 1px solid#ff7c7c;
 }
 
 .clock span:nth-child(4) {
-  border-right: 1px solid#8deaff;
+    border-right: 1px solid#8deaff;
 }
 
 .clock span:before,
 .clock span:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  backface-visibility: hidden;
-  transition: transform 0.75s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    transition: transform 0.75s;
 }
 
 .clock span:before {
-  content: attr(data-old);
-  z-index: 1;
-  transform: translate3d(0, 0, 0);
+    content: attr(data-old);
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 .clock .flip:before {
-  transform: translate3d(0, 102.5%, 0);
+    transform: translate3d(0, 102.5%, 0);
 }
 
 .clock span:after {
-  content: attr(data-now);
-  z-index: 2;
-  transform: translate3d(0, -102.5%, 0);
+    content: attr(data-now);
+    z-index: 2;
+    transform: translate3d(0, -102.5%, 0);
 }
 
 .clock .flip:after {
-  transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
