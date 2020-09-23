@@ -10,6 +10,7 @@
 html,
 body {
   height: 100%;
+  user-select: none;
 }
 
 body {
@@ -43,12 +44,12 @@ body {
 }
 
 #comma {
-  color: #ffb6b9;
+  color: #ffe084;
   margin-right: 5px;
 }
 
 #slash {
-  color: #ffe084;
+  color: #ffb6b9;
 }
 
 #chrome {
