@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round:300,400,700");
 
 * {
   margin: 0;
@@ -30,10 +31,21 @@ body {
   font-size: 30px;
   font-weight: bold;
   padding-top: 30px;
+  font-family: "Varela Round", sans-serif !important;
 }
 
 #timeframe {
   color: #ffb6b9;
+}
+
+#chrome {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+a {
+  color: inherit;
 }
 
 .clock {
