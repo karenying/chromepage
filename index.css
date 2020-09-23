@@ -43,9 +43,9 @@ body {
     color: white;
 }
 
-#comma {
+#dot {
     color: #ffe084;
-    margin-right: 5px;
+    margin: 0px 5px;
 }
 
 #slash {
