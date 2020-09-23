@@ -1,6 +1,6 @@
 {
   "name": "Chromepage",
-  "description": "Override of Chrome New Tab page by Karen Ying.",
+  "description": "Personalized override of Chrome New Tab page.",
   "version": "1.0",
   "incognito": "split",
   "chrome_url_overrides": { "newtab": "index.html" },
