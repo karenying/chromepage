@@ -72,18 +72,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let timeframe;
 
-  switch (currHour) {
-    case currHour >= 6 && currHour <= 11:
-      timeframe = "morning";
-      break;
-    case currHour >= 12 && currHour <= 16:
-      timeframe = "afternoon";
-      break;
-    case currHour >= 17 && currHour <= 20:
-      timeframe = "evening";
-      break;
-    default:
-      timeframe = "night";
+  if (currHour >= 6 && currHour <= 11) {
+    timeframe = "morning";
+  } else if (currHour >= 12 && currHour <= 16) {
+    timeframe = "afternoon";
+  } else if (currHour >= 17 && currHour <= 20) {
+    timeframe = "evening";
+  } else {
+    timeframe = "night";
   }
 
   document.querySelector("#day").innerHTML = day;
