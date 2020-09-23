@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         new Clock(clocks[i]);
     }
 
-    const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
     const date = new Date();
     const currHour = date.getHours();
