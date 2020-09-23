@@ -27,15 +27,28 @@ body {
   align-items: center;
 }
 
-#greeting {
+#date {
   font-size: 30px;
-  font-weight: bold;
-  padding-top: 30px;
-  font-family: "Varela Round", sans-serif !important;
+  margin-bottom: 20px;
+  display: flex;
+  font-family: monospace !important;
 }
 
-#timeframe {
+#greeting {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 45px;
+  font-family: "Varela Round", sans-serif !important;
+  color: white;
+}
+
+#comma {
   color: #ffb6b9;
+  margin-right: 5px;
+}
+
+#slash {
+  color: #ffe084;
 }
 
 #chrome {

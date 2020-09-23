@@ -62,19 +62,32 @@ document.addEventListener("DOMContentLoaded", function () {
   for (; i < l; i++) {
     new Clock(clocks[i]);
   }
+  const date = new Date();
+  const currHour = date.getHours();
+  const currDay = date.getDay();
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const day = days[currDay];
+  const month = date.getMonth() + 1;
+  const numDate = date.getDate();
 
-  const currHour = new Date().getHours();
   let timeframe;
 
-  if (currHour >= 6 && currHour <= 11) {
-    timeframe = "morning";
-  } else if (currHour >= 12 && currHour <= 16) {
-    timeframe = "afternoon";
-  } else if (currHour >= 17 && currHour <= 20) {
-    timeframe = "evening";
-  } else {
-    timeframe = "night";
+  switch (currHour) {
+    case currHour >= 6 && currHour <= 11:
+      timeframe = "morning";
+      break;
+    case currHour >= 12 && currHour <= 16:
+      timeframe = "afternoon";
+      break;
+    case currHour >= 17 && currHour <= 20:
+      timeframe = "evening";
+      break;
+    default:
+      timeframe = "night";
   }
 
+  document.querySelector("#day").innerHTML = day;
+  document.querySelector("#month").innerHTML = month;
+  document.querySelector("#num-date").innerHTML = numDate;
   document.querySelector("#timeframe").innerHTML = timeframe;
 });
