@@ -62,4 +62,19 @@ document.addEventListener("DOMContentLoaded", function () {
   for (; i < l; i++) {
     new Clock(clocks[i]);
   }
+
+  const currHour = new Date().getHours();
+  let timeframe;
+
+  if (currHour >= 6 && currHour <= 11) {
+    timeframe = "morning";
+  } else if (currHour >= 12 && currHour <= 16) {
+    timeframe = "afternoon";
+  } else if (currHour >= 17 && currHour <= 20) {
+    timeframe = "evening";
+  } else {
+    timeframe = "night";
+  }
+
+  document.querySelector("#timeframe").innerHTML = timeframe;
 });

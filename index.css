@@ -13,17 +13,31 @@ body {
 
 body {
   font: 300 70px/1 "Lato", sans-serif;
-  color: #777;
-  background: #eee;
+  color: #d9d9d9;
+  background: #2a2b2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#greeting {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+#timeframe {
+  color: #ffb6b9;
 }
 
 .clock {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 350px;
-  margin-top: -45px;
-  margin-left: -(350px/2);
   text-align: center;
   overflow: hidden;
 }
@@ -34,9 +48,12 @@ body {
   width: 50px;
 }
 
-.clock span:nth-child(2),
+.clock span:nth-child(2) {
+  border-right: 1px solid#ff7c7c;
+}
+
 .clock span:nth-child(4) {
-  border-right: 1px solid #aaa;
+  border-right: 1px solid#8deaff;
 }
 
 .clock span:before,
