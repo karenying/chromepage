@@ -1,6 +1,6 @@
 # chromepage
 
-Personalized override of Chrome New Tab page
+Personalized override of Chrome New Tab page.
 
 <img src="preview.gif" width="600px">
 
