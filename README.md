@@ -2,7 +2,7 @@
 
 Personalized override of Chrome New Tab page.
 
-<img src="preview.gif" width="600px">
+<img src="preview.gif">
 
 [Clock](https://codepen.io/harshabhat86/full/tAxuF) lifted from [@harshabhat86](https://github.com/harshabhat86). Theme consistent with my personal site: http://karenying.com/.
 
