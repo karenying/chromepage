@@ -31,10 +31,11 @@ body {
 
 #date {
     font-size: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
-    font-family: 'Ubuntu Mono' !important;
+    font-family: 'Ubuntu Mono';
     color: #bdbdbd;
+    font-style: italic;
 }
 
 #greeting {
@@ -123,4 +124,12 @@ a {
 
 .clock .flip:after {
     transform: translate3d(0, 0, 0);
+}
+
+.clock-container {
+    padding: 20px 15px;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    box-shadow: 5px 5px 15px #000;
+    background-color: transparent;
 }
