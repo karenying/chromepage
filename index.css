@@ -77,11 +77,21 @@ a {
 }
 
 .clock span:nth-child(2) {
-    border-right: 1px solid#ff7c7c;
+    border-right: 2px solid#ff7c7c;
+    margin-right: 10px;
+    width: 60px;
+    text-align: left;
 }
 
 .clock span:nth-child(4) {
-    border-right: 1px solid#8deaff;
+    border-right: 2px solid#8deaff;
+    margin-right: 10px;
+    width: 60px;
+    text-align: left;
+}
+
+.clock span:nth-child(6) {
+    text-align: left;
 }
 
 .clock span:before,
