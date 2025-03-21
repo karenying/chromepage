@@ -1,12 +1,12 @@
 {
-    "name": "Chromepage",
-    "description": "Personalized override of Chrome New Tab page.",
-    "version": "1.0",
-    "chrome_url_overrides": { "newtab": "index.html" },
-    "manifest_version": 2,
-    "icons": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-    }
+  "name": "Chromepage",
+  "description": "Personalized override of Chrome New Tab page.",
+  "version": "1.0",
+  "chrome_url_overrides": { "newtab": "index.html" },
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }
